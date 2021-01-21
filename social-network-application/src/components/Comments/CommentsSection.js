@@ -8,6 +8,10 @@ const CommentsSection = (props) => {
 
   return (
     <div className="comments-section-container">
+      <div className="commets-row header">
+
+      </div>
+      <div className="comments-section-row comments-item"></div>
       <CommentItem />
       <CommentItem />
       <CommentItem />
