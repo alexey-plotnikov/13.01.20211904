@@ -1,7 +1,72 @@
-.comments-section-row {
-  .comments-item {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+.comments-section-container {
+  display: flex;
+
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+}
+
+.comments-section-header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.comments-section-header__last-comments {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #333333;
+}
+
+.comments-section-header__all-comments {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.comments-section-header__all-comments-link {
+  display: flex;
+  align-items: center;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: underline;
+
+  &:hover {
+    cursor: pointer;
   }
+}
+
+.comments-section-header__likes-icon {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.comments-section-header__comments-icon {
+  display: flex;
+  align-items: center;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
 }

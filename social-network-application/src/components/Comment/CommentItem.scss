@@ -1,7 +1,7 @@
 .comment-item-container {
   display: flex;
   flex-direction: column;
-  padding: 0 20px 20px 20px;
+  padding-bottom: 20px;
 }
 
 .comment-item-header {
@@ -26,34 +26,41 @@
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
-  color: #333333;
+  color: #888888;
 }
 
 .comment-item-text {
+  display: flex;
+  text-align: left;
+  align-items: center;
   position: relative;
   width: 450px;
-  height: 55px;
   background: #f2fbff;
   border: 1px solid #c4cbcf;
+  padding: 15px 21px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
 
   &::before {
-    content: ' '; 
-    position: absolute; 
-    width: 0; 
-    height: 0; 
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
     top: -9px;
-    left: 23px; 
+    left: 23px;
     border: 4.5px solid;
-    border-color: transparent transparent #C4CBCF #C4CBCF; 
+    border-color: transparent transparent #c4cbcf #c4cbcf;
   }
   &::after {
-    content: ' '; 
-    position: absolute; 
-    width: 0; 
-    height: 0; 
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
     top: -6.5px;
-    left: 24px; 
-    border: 3.5px solid; 
-    border-color: transparent transparent #F2FBFF #F2FBFF; 
+    left: 24px;
+    border: 3.5px solid;
+    border-color: transparent transparent #f2fbff #f2fbff;
   }
 }

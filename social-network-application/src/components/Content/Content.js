@@ -7,12 +7,12 @@ import NewCommentSection from "components/NewComment/NewCommentSection";
 import "./Content.scss";
 
 const Content = (props) => {
-  const {} = props;
+  const { profileData, comments } = props;
 
   return (
     <div className="content-section-container">
       <ProfileSection />
-      <CommentsSection />
+      <CommentsSection profileData={profileData} comments={comments} />
       <NewCommentSection />
     </div>
   );
