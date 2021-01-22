@@ -1,29 +1,27 @@
 export const ProfileData = {
+  PROFILE_PICTURE: "/assets/img/profile.png",
   NAME: "Вероника Ростова",
   JOB_TITLE: "Менеджер по продажам",
   SLOGAN:
     "Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны",
-  SERVICES_NAMES: [
-    {
-      NAME: "Ручное бронирование",
-      NUMBER: "11",
-    },
-    {
-      NAME: "Пакетные туры",
-      NUMBER: "3",
-    },
-    {
-      NAME: "Отели",
-      NUMBER: "1",
-    },
-    {
-      NAME: "Всего",
-      NUMBER: "15",
-    },
-  ],
   AMOUNT_OF_LIKES: "131",
   AMOUNT_OF_COMMENTS: "14",
 };
+
+export const Services = [
+  {
+    NAME: "Ручное бронирование",
+    AMOUNT: "11",
+  },
+  {
+    NAME: "Пакетные туры",
+    AMOUNT: "3",
+  },
+  {
+    NAME: "Отели",
+    AMOUNT: "1",
+  }
+];
 
 export const Comments = [
   {

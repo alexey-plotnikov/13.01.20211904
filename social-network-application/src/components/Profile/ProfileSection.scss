@@ -1,64 +1,86 @@
 .profile-section-container {
   display: flex;
   flex-direction: row;
-}
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
 
-.profile-picture-col {
-  display: flex;
-  flex-direction: column;
-
-  &.picture {
-    z-index: 0;
-  }
-}
-
-.profile-data-col {
-  display: flex;
-  flex-direction: column;
-
-  .name {
-    height: 20px;
-
-    font-family: Arial;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    color: #333333;
-  }
-
-  .job-title {
-    height: 20px;
-    
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 20px;
-    color: #808080;
-  }
-
-  .slogan {
-    z-index: 2;
-    width: 364px;
-    height: 54px;
-    background: #fffbc8;
-    border: 1px solid #dadada;
-    box-sizing: border-box;
-    border-radius: 5px;
-
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333333;
-  }
-
-  &.flex-start {
+  .profile-picture {
     display: flex;
     flex-direction: row;
-    text-align: left;
-    align-items: center;
+    padding-top: 16px;
+    z-index: 9;
+
+    .profile-picture__image-box {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      .image {
+        width: 100%;
+        height: auto;
+        transform: scale(1.35);
+        transform-origin: 50% 20%;
+      }
+    }
+  }
+
+  .profile-data {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 85px;
+    padding-top: 25px;
+    padding-right: 20px;
+
+    .profile-data__name {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 50px;
+
+      font-family: Arial;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #333333;
+    }
+
+    .profile-data__job-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 50px;
+      padding-bottom: 5px;
+
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      color: #808080;
+    }
+
+    .profile-data__slogan {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-height: 54px;
+      padding-left: 50px;
+
+      background: #fffbc8;
+      border: 1px solid #dadada;
+      border-radius: 5px;
+
+      text-align: left;
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+    }
   }
 }

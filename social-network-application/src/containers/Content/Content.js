@@ -2,7 +2,7 @@ import React from "react";
 
 import Content from "components/Content/Content";
 
-import { ProfileData, Comments } from "common/mocks";
+import { ProfileData, Services, Comments } from "common/mocks";
 
 class ContentContainer extends React.Component {
   constructor() {
@@ -10,15 +10,16 @@ class ContentContainer extends React.Component {
 
     this.state = {
       profileData: ProfileData,
+      services: Services,
       comments: Comments,
     };
   }
   
   render() {
-    const { profileData, comments } = this.state;
+    const { profileData, services, comments } = this.state;
     return (
       <div>
-        <Content profileData={profileData} comments={comments} />
+        <Content profileData={profileData} services={services} comments={comments} />
       </div>
     );
   }

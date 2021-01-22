@@ -1,0 +1,29 @@
+.service-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .service-name {
+      display: flex;
+      align-items: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 26px;
+
+    color: #333333;
+  }
+
+  .service-amount {
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #333333;
+  }
+}

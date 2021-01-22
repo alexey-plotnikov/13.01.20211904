@@ -1,6 +1,6 @@
 import React from "react";
 
-import CommentItem from "components/Comment/CommentItem";
+import CommentItem from "components/Comments/CommentItem/CommentItem";
 
 import { CommentsConstants } from "common/constants";
 import "./CommentsSection.scss";
