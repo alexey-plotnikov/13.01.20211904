@@ -1,16 +1,30 @@
 import React from "react";
 
 import ServiceItem from "components/Services/ServiceItem/ServiceItem";
+import { ServicesConstants } from "common/constants";
 import "./ServicesSection.scss";
 
 const ServicesSection = (props) => {
   const { services } = props;
 
-  let totalAmount = () => {
+  const totalAmount = () => {
     return services.reduce(
       (result, service) => (result = result + parseFloat(service.AMOUNT)),
       0
     );
+  };
+
+  const getMaxServiceAmount = () => {
+    const result = Math.max.apply(
+      Math,
+      services.map((service) => {
+        return parseFloat(service.AMOUNT);
+      })
+    );
+
+    
+
+    return result;
   };
 
   return (
@@ -20,12 +34,16 @@ const ServicesSection = (props) => {
         <div className="horizontal-line"></div>
         <div className="service-items">
           {services.map((service, index) => (
-            <ServiceItem key={index} service={service} />
+            <ServiceItem
+              key={index}
+              service={service}
+              maxAmount={getMaxServiceAmount()}
+            />
           ))}
         </div>
         <div className="horizontal-line"></div>
         <div className="services-footer">
-          <div className="services-footer__title">Всего</div>
+          <div className={"services-footer__title"}>Всего</div>
           <div className="services-footer__total-amount">{totalAmount()}</div>
         </div>
       </div>

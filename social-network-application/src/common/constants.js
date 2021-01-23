@@ -1,7 +1,14 @@
-export const ProfileConstants = {
+export const ProfileConstants = {};
+
+export const ServicesConstants = {
   SERVICES: "Услуги",
-  ALL: "Всего"
-}
+  TOTAL: "Всего",
+};
+
+export const ServiceItemConstants = {
+  GREEN: "#b1e19b",
+  BLUE: "#ace2f8",
+};
 
 export const CommentsConstants = {
   RECENT_COMMENTS: "Последние отзывы",
@@ -9,7 +16,5 @@ export const CommentsConstants = {
 };
 
 export const NewCommentConstans = {
-  SUBMIT_COMMENT: "Написать консультанту"
-}
-
-
+  SUBMIT_COMMENT: "Написать консультанту",
+};
