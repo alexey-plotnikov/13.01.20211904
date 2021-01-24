@@ -1,14 +1,14 @@
 .comment-item-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .comment-item-header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 9px;
+  padding-bottom: 9px;
 }
 
 .comment-item-header__name {
@@ -42,6 +42,8 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  word-break: break-word;
+  hyphens: auto;
 
   &::before {
     content: " ";

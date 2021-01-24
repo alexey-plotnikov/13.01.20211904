@@ -1,17 +1,23 @@
 import React from "react";
 
+import { NewCommentConstans } from "common/constants";
 import "./NewCommentSection.scss";
 
 const NewCommentSection = (props) => {
-  const {} = props;
+  const { handleChange, newComment, handleSubmit } = props;
 
+  const comment = "works";
   return (
     <div className="new-comment-section-container">
-        <div className="new-comment-section input-field">
-        </div>
-        <div className="new-comment-section submit-button">
-          Написать консультанту
-        </div>
+      <textarea
+        name="newComment"
+        value={newComment}
+        onChange={(event) => handleChange(event)}
+        className="new-comment__input-field"
+      />
+      <div className="new-comment__submit-button" onClick={handleSubmit}>
+        {NewCommentConstans.SUBMIT_COMMENT}
+      </div>
     </div>
   );
 };

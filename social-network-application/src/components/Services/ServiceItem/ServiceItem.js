@@ -15,10 +15,10 @@ const ServiceItem = (props) => {
   };
 
   const getProgressBarScale = () => {
-    const test = 100 / maxAmount;
+    const scale = 100 / maxAmount;
+
     const style = {
-      width: parseFloat(service.AMOUNT * test) + "%",
-      maxWidth: "100%",
+      width: parseFloat(service.AMOUNT * scale) + "%",
       background: `${getProgressBarColor()}`,
     };
     return style;
@@ -27,7 +27,7 @@ const ServiceItem = (props) => {
   return (
     <div className="service-item-container">
       <div className="service-name">
-        <p>{service.NAME} </p>
+        <p>{service.NAME}</p>
         <div className="progress-bar" style={getProgressBarScale()}></div>
       </div>
       <div className="service-amount">{service.AMOUNT}</div>

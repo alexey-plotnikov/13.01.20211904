@@ -10,23 +10,32 @@ const CommentsSection = (props) => {
 
   return (
     <div className="comments-section-container">
-      <div className="comments-section-header">
-        <div className="comments-section-header__last-comments">
+      <div className="comments-header">
+        <div className="comments-header__last-comments">
           {CommentsConstants.RECENT_COMMENTS}
         </div>
-        <div className="comments-section-header__all-comments">
-          <a href="" className="comments-section-header__all-comments-link">
+        <div className="comments-header__all-comments">
+          <a href="" className="comments-header__all-comments-link">
             {CommentsConstants.ALL_COMMENTS}
           </a>
         </div>
-        <div className="comments-section-header__likes-icon">
-          {profileData.AMOUNT_OF_LIKES}
+
+        <div className="comments-header__likes-icon">
+          <img
+            src={process.env.PUBLIC_URL + CommentsConstants.LIKES_ICON}
+            alt=""
+          />
+          <p>{profileData.AMOUNT_OF_LIKES}</p>
         </div>
-        <div className="comments-section-header__comments-icon">
-          {profileData.AMOUNT_OF_COMMENTS}
+        <div className="comments-header__comments-icon">
+          <img
+            src={process.env.PUBLIC_URL + CommentsConstants.COMMENTS_ICON}
+            alt=""
+          />
+          <p>{profileData.AMOUNT_OF_COMMENTS}</p>
         </div>
       </div>
-      <div className="comments-section-comment-item">
+      <div className="comments-item">
         {comments.map((comment, index) => (
           <CommentItem key={index} comment={comment} />
         ))}

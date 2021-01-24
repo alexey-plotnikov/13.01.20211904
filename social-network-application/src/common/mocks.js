@@ -20,7 +20,7 @@ export const Services = [
   {
     NAME: "Отели",
     AMOUNT: "1",
-  }
+  },
 ];
 
 export const Comments = [

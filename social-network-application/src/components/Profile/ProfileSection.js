@@ -1,5 +1,5 @@
 import React from "react";
-// import {  } from "commonjs";
+
 import { ProfileConstants } from "common/constants";
 import "./ProfileSection.scss";
 

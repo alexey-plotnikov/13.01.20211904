@@ -4,10 +4,8 @@
   height: 191px;
   background: #f2f2f2;
   align-items: center;
-}
 
-.new-comment-section {
-  &.input-field {
+  .new-comment__input-field {
     width: 447px;
     height: 63px;
 
@@ -15,9 +13,11 @@
     border: 1px solid #000000;
     border-radius: 1px;
     margin-top: 28px;
+    resize: none;
+    padding: 5px 10px;
   }
 
-  &.submit-button {
+  .new-comment__submit-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,10 +27,13 @@
     border-radius: 23px;
     margin-top: 28px;
 
-    // font-family: PT Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

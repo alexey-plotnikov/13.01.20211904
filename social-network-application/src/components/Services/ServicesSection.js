@@ -22,8 +22,6 @@ const ServicesSection = (props) => {
       })
     );
 
-    
-
     return result;
   };
 
@@ -32,15 +30,19 @@ const ServicesSection = (props) => {
       <div className="services-container">
         <div className="services-header">Услуг</div>
         <div className="horizontal-line"></div>
-        <div className="service-items">
-          {services.map((service, index) => (
-            <ServiceItem
-              key={index}
-              service={service}
-              maxAmount={getMaxServiceAmount()}
-            />
-          ))}
+        <div className="services-item">
+          <div className="vertical-line"></div>
+          <div className="services-item__item">
+            {services.map((service, index) => (
+              <ServiceItem
+                key={index}
+                service={service}
+                maxAmount={getMaxServiceAmount()}
+              />
+            ))}
+          </div>
         </div>
+
         <div className="horizontal-line"></div>
         <div className="services-footer">
           <div className={"services-footer__title"}>Всего</div>

@@ -13,8 +13,12 @@ export const ServiceItemConstants = {
 export const CommentsConstants = {
   RECENT_COMMENTS: "Последние отзывы",
   ALL_COMMENTS: "Все отзывы",
+  LIKES_ICON: "/assets/img/icons/like.svg",
+  COMMENTS_ICON: "/assets/img/icons/comment.svg",
 };
 
 export const NewCommentConstans = {
+  NAME: "Джон Доу",
+  DATE_FORMAT: "DD MMMM YYYY",
   SUBMIT_COMMENT: "Написать консультанту",
 };

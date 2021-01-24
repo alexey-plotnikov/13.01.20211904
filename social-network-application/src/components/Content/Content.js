@@ -8,14 +8,25 @@ import NewCommentSection from "components/NewComment/NewCommentSection";
 import "./Content.scss";
 
 const Content = (props) => {
-  const { profileData, services, comments } = props;
+  const {
+    profileData,
+    services,
+    comments,
+    handleChange,
+    newComment,
+    handleSubmit,
+  } = props;
 
   return (
     <div className="content-section-container">
       <ProfileSection profileData={profileData} />
       <ServicesSection services={services} />
       <CommentsSection profileData={profileData} comments={comments} />
-      <NewCommentSection />
+      <NewCommentSection
+        newComment={newComment}
+        handleChange={(event) => handleChange(event)}
+        handleSubmit={() => handleSubmit()}
+      />
     </div>
   );
 };
