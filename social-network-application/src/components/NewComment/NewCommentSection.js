@@ -4,7 +4,7 @@ import { NewCommentConstans } from "common/constants";
 import "./NewCommentSection.scss";
 
 const NewCommentSection = (props) => {
-  const { handleChange, newComment, handleSubmit } = props;
+  const { handleChange, newComment, handleKeyDown, handleSubmit } = props;
 
   const comment = "works";
   return (
@@ -13,9 +13,14 @@ const NewCommentSection = (props) => {
         name="newComment"
         value={newComment}
         onChange={(event) => handleChange(event)}
+        onKeyDown={handleKeyDown}
         className="new-comment__input-field"
       />
-      <div className="new-comment__submit-button" onClick={handleSubmit}>
+      <div
+        className="new-comment__submit-button"
+        onClick={handleSubmit}
+        
+      >
         {NewCommentConstans.SUBMIT_COMMENT}
       </div>
     </div>

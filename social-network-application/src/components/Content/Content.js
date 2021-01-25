@@ -14,6 +14,7 @@ const Content = (props) => {
     comments,
     handleChange,
     newComment,
+    handleKeyDown,
     handleSubmit,
   } = props;
 
@@ -25,6 +26,7 @@ const Content = (props) => {
       <NewCommentSection
         newComment={newComment}
         handleChange={(event) => handleChange(event)}
+        handleKeyDown={(event) => handleKeyDown(event)}
         handleSubmit={() => handleSubmit()}
       />
     </div>

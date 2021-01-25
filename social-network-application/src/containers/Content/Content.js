@@ -24,10 +24,17 @@ class ContentContainer extends React.Component {
     });
   }
 
-  handleSubmit() {
-    const { comments, newComment } = this.state;
+  handleKeyDown(event) {
+    if(event.keyCode === NewCommentConstans.ENTER_KEYCODE && event.ctrlKey) {
+      this.handleSubmit();
+    }
+    
+  }
 
-    if (newComment !== "") {
+  handleSubmit() {
+    const { newComment } = this.state;
+
+    if (newComment.replace(/^\s+|\s+$/g,"") !== "") {
       this.setState((prevState) => ({
         comments: [
           ...prevState.comments,
@@ -52,6 +59,7 @@ class ContentContainer extends React.Component {
           comments={comments}
           newComment={newComment}
           handleChange={(event) => this.handleChange(event)}
+          handleKeyDown={(event) => this.handleKeyDown(event)}
           handleSubmit={() => this.handleSubmit()}
         />
       </div>

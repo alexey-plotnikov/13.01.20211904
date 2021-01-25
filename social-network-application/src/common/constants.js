@@ -20,5 +20,6 @@ export const CommentsConstants = {
 export const NewCommentConstans = {
   NAME: "Джон Доу",
   DATE_FORMAT: "DD MMMM YYYY",
+  ENTER_KEYCODE: 13,
   SUBMIT_COMMENT: "Написать консультанту",
 };
