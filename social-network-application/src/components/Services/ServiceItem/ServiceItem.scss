@@ -14,7 +14,7 @@
     z-index: 2;
     overflow: hidden;
     align-items: center;
-    min-height: 24px;
+
     width: 100%;
 
     p {
@@ -33,7 +33,7 @@
     .progress-bar {
       position: absolute;
       z-index: -1;
-      height: 26px;
+      height: 100%;
       transform-origin: left;
       border-radius: 0px 3px 3px 0px;
     }

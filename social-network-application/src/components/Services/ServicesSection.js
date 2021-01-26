@@ -1,7 +1,6 @@
 import React from "react";
 
 import ServiceItem from "components/Services/ServiceItem/ServiceItem";
-import { ServicesConstants } from "common/constants";
 import "./ServicesSection.scss";
 
 const ServicesSection = (props) => {

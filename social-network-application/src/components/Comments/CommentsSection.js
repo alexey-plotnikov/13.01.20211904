@@ -15,11 +15,10 @@ const CommentsSection = (props) => {
           {CommentsConstants.RECENT_COMMENTS}
         </div>
         <div className="comments-header__all-comments">
-          <a href="" className="comments-header__all-comments-link">
+          <a href="/" className="comments-header__all-comments-link">
             {CommentsConstants.ALL_COMMENTS}
           </a>
         </div>
-
         <div className="comments-header__likes-icon">
           <img
             src={process.env.PUBLIC_URL + CommentsConstants.LIKES_ICON}

@@ -34,7 +34,7 @@
   text-align: left;
   align-items: center;
   position: relative;
-  width: 450px;
+  width: 100%;
   background: #f2fbff;
   border: 1px solid #c4cbcf;
   padding: 15px 21px;
@@ -43,7 +43,6 @@
   font-weight: normal;
   font-size: 14px;
   word-break: break-word;
-  hyphens: auto;
 
   &::before {
     content: " ";

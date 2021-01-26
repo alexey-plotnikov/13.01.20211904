@@ -1,6 +1,5 @@
 import React from "react";
 
-import { ProfileConstants } from "common/constants";
 import "./ProfileSection.scss";
 
 const ProfileSection = (props) => {
@@ -18,11 +17,12 @@ const ProfileSection = (props) => {
         </div>
       </div>
       <div className="profile-data">
-        <div className="profile-data__name">
-          {profileData.NAME}
-        </div>
+        <div className="profile-data__name">{profileData.NAME}</div>
         <div className="profile-data__job-title">{profileData.JOB_TITLE}</div>
-        <div className="profile-data__slogan">{profileData.SLOGAN}</div>
+        <div className="profile-data__slogan">
+          <div className="slogan-background"></div>
+          <p>{profileData.SLOGAN}</p>
+        </div>
       </div>
     </div>
   );

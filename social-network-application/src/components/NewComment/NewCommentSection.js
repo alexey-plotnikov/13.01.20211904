@@ -6,7 +6,6 @@ import "./NewCommentSection.scss";
 const NewCommentSection = (props) => {
   const { handleChange, newComment, handleKeyDown, handleSubmit } = props;
 
-  const comment = "works";
   return (
     <div className="new-comment-section-container">
       <textarea
@@ -19,7 +18,6 @@ const NewCommentSection = (props) => {
       <div
         className="new-comment__submit-button"
         onClick={handleSubmit}
-        
       >
         {NewCommentConstans.SUBMIT_COMMENT}
       </div>
